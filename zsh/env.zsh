@@ -7,5 +7,4 @@ export PATH=/home/harindu/Scripts/bin:$PATH
 #Doom emacs
 export PATH=/home/harindu/.emacs.d/bin:$PATH
 
-#Init zoxide
-eval "$(zoxide init zsh)"
+export EDITOR="nvim"
