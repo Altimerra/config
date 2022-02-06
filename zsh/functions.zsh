@@ -45,7 +45,7 @@ o() {
 
   case "$filetype" in
     text*)
-      emacsclient "$file"
+      nvim "$file"
       ;;
     application/pdf)
       zathura "$file" &
@@ -64,7 +64,7 @@ o() {
       z "$dir" && exa || echo "Directory not found"
       ;;
     *)
-      echo "What the fuck is this?"
+      echo "What is this?"
       ;;
   esac
 }
