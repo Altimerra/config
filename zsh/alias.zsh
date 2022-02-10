@@ -51,3 +51,6 @@ alias mnt="udiskctl mount -b"
 alias mega="rclone mount Mega:/ /home/harindu/Drives/Mega"
 
 alias e="emacsclient -nc"
+
+# file menu
+alias f="ls | rofi -dmenu -i -theme Arc-Dark -multi-select | xargs -d '\n' "

@@ -51,3 +51,4 @@
 
 (package! auctex)
 (package! cdlatex)
+(package! ac-octave)

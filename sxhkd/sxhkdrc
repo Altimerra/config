@@ -12,8 +12,11 @@ super + @space
 
 # program launcher 2
 super + d
-	rofi -show run -theme Arc-Dark
+	rofi -modi drun -show drun -theme Arc-Dark
 
+# the church of emacs
+super + e
+	emacs
 # show/switch windows
 super + w
  	rofi -show window -theme Arc-Dark
