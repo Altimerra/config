@@ -35,7 +35,7 @@ openbg(){
 c() {
   local dir="$1"
   local dir="${dir:=$PWD}"
-  z "$dir" && exa -l || echo "Directory not found"
+  z "$dir" && exa -l --icons || echo "Directory not found"
 }
 
 o() {
@@ -61,7 +61,7 @@ o() {
       ;;
     inode/directory)
       local dir="${file:=$PWD}"
-      z "$dir" && exa || echo "Directory not found"
+      z "$dir" && exa -l --icons || echo "Directory not found"
       ;;
     *)
       echo "What is this?"

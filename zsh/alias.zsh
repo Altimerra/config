@@ -22,9 +22,10 @@ alias ytm-playlist="youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' -x --add-meta
 alias m="mkdir"
 
 # Exa
-alias l="exa" 
-alias ll="exa -l" 
-alias la="exa -la"
+alias l="exa --icons"
+alias ll="exa -l --icons"
+alias la="exa -la --icons"
+alias lr="exa -R"
 
 # Wallpaper
 alias paper="nitrogen ~/Pictures/Wallhaven"

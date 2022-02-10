@@ -10,6 +10,14 @@ super + Return
 super + @space
 	dmenu_run
 
+# program launcher 2
+super + r
+	rofi -show run -theme Arc-Dark
+
+# show/switch windows
+super + w
+ 	rofi -show window -theme Arc-Dark
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -119,3 +127,29 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+XF86MonBrightnessUp
+	brightnessctl -q s +10%
+
+XF86MonBrightnessDown
+	brightnessctl -q s 10%-
+
+# using unused symbols for brightness control
+XF86Explorer
+	brightnessctl -q s +10%
+
+XF86Search
+	brightnessctl -q s 10%-
+
+XF86MonBrightnessDown
+	brightnessctl -q s 10%-
+
+# Volume control
+XF86AudioLowerVolume
+    pulseaudio-ctl down
+
+XF86AudioRaiseVolume
+    pulseaudio-ctl up
+
+XF86AudioMute
+    pulseaudio-ctl mute
