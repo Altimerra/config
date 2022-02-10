@@ -12,22 +12,26 @@ super + @space
 
 # program launcher 2
 super + d
-	rofi -modi drun -show drun -theme Arc-Dark
+	rofi -modi drun -show drun
 
 # the church of emacs
 super + e
 	emacs
 # show/switch windows
 super + w
- 	rofi -show window -theme Arc-Dark
+ 	rofi -show window -theme
 
 # power menu
 super + x
-    rofi -show power-menu -modi power-menu:rofi-power-menu -theme Arc-Dark
+	rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # file browser
 super + a
-	  rofi -modi file-browser-extended -show file-browser-extended -theme Arc-Dark
+	rofi -modi file-browser-extended -show file-browser-extended
+
+
+super + n
+	~/Scripts/Custom/rofi-wifi-menu.sh
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

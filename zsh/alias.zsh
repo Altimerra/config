@@ -53,4 +53,4 @@ alias mega="rclone mount Mega:/ /home/harindu/Drives/Mega"
 alias e="emacsclient -nc"
 
 # file menu
-alias f="ls | rofi -dmenu -i -theme Arc-Dark -multi-select | xargs -d '\n' "
+alias f="ls | rofi -dmenu -i -multi-select | xargs -d '\n' "
