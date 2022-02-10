@@ -50,3 +50,4 @@
 ;(unpin! t)
 
 (package! auctex)
+(package! cdlatex)

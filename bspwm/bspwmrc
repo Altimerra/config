@@ -2,15 +2,15 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-picom --vsync &
+picom --vsync --backend glx &
 #polybar example &
 ~/Config/polybar2/launch.sh
 dunst &
 ~/.fehbg &
 xfce4-power-manager &
 
-bspc monitor eDP -d I II III IV V VI VII VIII IX
-bspc monitor HDMI-A-0 -d X
+bspc monitor eDP -d "1" "2" "3" "4" "5" "6" "7" "8" "9"
+bspc monitor HDMI-A-0 -d "10"
 
 bspc config border_width         4
 bspc config window_gap           5
