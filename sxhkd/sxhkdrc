@@ -11,13 +11,20 @@ super + @space
 	dmenu_run
 
 # program launcher 2
-super + r
+super + d
 	rofi -show run -theme Arc-Dark
 
 # show/switch windows
 super + w
  	rofi -show window -theme Arc-Dark
 
+# power menu
+super + x
+    rofi -show power-menu -modi power-menu:rofi-power-menu -theme Arc-Dark
+
+# file browser
+super + a
+	  rofi -modi file-browser-extended -show file-browser-extended -theme Arc-Dark
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
