@@ -1,23 +1,8 @@
 #!/usr/bin/env zsh
 
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-alias weather="pwy Colombo"
+
 alias r='ranger'
-alias ca='conda activate'
-alias yt720="youtube-dl -f 'bestvideo[ext=webm][height<=720]+bestaudio[ext=webm]' --add-metadata"
-alias yt1080="youtube-dl -f 'bestvideo[ext=webm][height<=1080]+bestaudio[ext=webm]' --add-metadata"
-alias ytm="youtube-dl -x --add-metadata"
-alias clip="xsel -b"
-alias youtube="ytfzf -t"
-alias yt="ytfzf -tlf"
-alias weather="pwy Maharagama"
-alias rmcolor="sed 's/\x1b\[[0-9;]*m//g'"
-alias ascii-img="ascii-image-converter -Cfc"
-alias img="sxiv -to ."
-alias timetable="zathura /mnt/data/Library/Academic/General/S3_mech_2021.pdf"
-alias vi="vim.tiny"
-alias ytm-album="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' -x --add-metadata"
-alias ytm-playlist="youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' -x --add-metadata"
 
 alias m="mkdir"
 
@@ -27,30 +12,37 @@ alias ll="exa -l --icons"
 alias la="exa -la --icons"
 alias lr="exa -R"
 
-# Wallpaper
-alias paper="nitrogen ~/Pictures/Wallhaven"
-
-# Directories
-alias Ytm="/mnt/data/Library/Music/Ytm"
-alias Aca="/mnt/data/Library/Academic/Modules"
-alias Wall="/mnt/data/Library/Wallpapers"
-
 # Package management
-alias pac-install="sudo pacman -S"
+alias p="sudo pacman -S"
 alias pac-remove="sudo pacman -Rs"
 alias pac-upgrade-all="sudo pacman -Syu"
 alias pac-search-sync="pacman -Ss"
 alias pac-search-local="pacman -Qi"
 alias pac-search-files="pacman -F"
 
-alias lynx="lynx -accept_all_cookies"
+#Git
 
-alias mnt="udiskctl mount -b"
+alias gis="git status"
+alias gid="git diff"
+alias gia="git add"
+alias gic="git commit -am"
 
-# Cloud drives
-alias mega="rclone mount Mega:/ /home/harindu/Drives/Mega"
-
+# emacs
 alias e="emacsclient -nc"
 
 # file menu
-alias f="ls | rofi -dmenu -i -multi-select | xargs -d '\n' "
+alias ff="ls | rofi -dmenu -i -multi-select | xargs -d '\n'"
+alias f="ls | fzf -m | xargs -d '\n'"
+
+# image pipe
+alias i="nsxiv -tfo . | xargs -d '\n'"
+alias iw="nsxiv -tfo . | xargs -d '\n' feh --bg-fill"
+
+# mpv
+alias mpv-webcam="mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_format=mjpeg av://v4l2:/dev/video0 --profile=low-latency --untimed"
+
+# ffmpeg
+alias ff-rec="ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac"
+
+# clipboard
+alias clip="xsel -b"

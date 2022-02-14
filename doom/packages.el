@@ -51,4 +51,4 @@
 
 (package! auctex)
 (package! cdlatex)
-(package! ac-octave)
+(package! org-vcard)

@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-TASKRC=~/.config/task/taskrc
+export TASKRC=~/.config/task/taskrc
 #My custom paths
 export PATH=/home/harindu/Scripts/bin:$PATH
 
@@ -11,3 +11,6 @@ export EDITOR="nvim"
 
 # For the camera-copy script
 export CAMERA_DIR="/home/harindu/Data/Shared-Media/Photos/DCIM/Camera"
+
+# pass password store location
+export PASSWORD_STORE_DIR="/home/harindu/Data/Briefcase/Pass"
