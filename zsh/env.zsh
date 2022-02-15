@@ -2,7 +2,7 @@
 
 export TASKRC=~/.config/task/taskrc
 #My custom paths
-export PATH=/home/harindu/Scripts/bin:$PATH
+export PATH=/home/harindu/Scripts:$PATH
 
 #Doom emacs
 export PATH=/home/harindu/.emacs.d/bin:$PATH
