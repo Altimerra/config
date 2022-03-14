@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "Harindu Bandara"
+      user-mail-address "harindudb@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -33,7 +33,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type `relative)
 
 
 ;; Here are some additional functions/macros that could help you configure Doom:
@@ -55,3 +55,13 @@
 (map! :leader
       :desc "Go back"
       "o g" #'org-mark-ring-goto)
+
+;; global activation of the unicode symbol completion
+(add-to-list 'company-backends 'company-math-symbols-unicode)
+(add-to-list 'company-backends 'company-math-symbols-latex)
+(add-to-list 'company-backends 'company-latex-commands)
+
+(add-hook 'org-mode-hook #'turn-on-org-cdlatex)
+
+(use-package tex
+  :ensure auctex)

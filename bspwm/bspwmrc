@@ -4,11 +4,13 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 picom --vsync --backend glx &
 # polybar example &
-~/Config/polybar2/launch.sh
+# ~/Config/polybar2/launch.sh
 dunst &
 ~/.fehbg &
 # xfce4-power-manager &
 sh ~/Scripts/battery-notify &
+
+setxkbmap -option caps:escape
 
 bspc monitor eDP -d "1" "2" "3" "4" "5" "6" "7" "8" "9"
 bspc monitor HDMI-A-0 -d "10"

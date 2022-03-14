@@ -10,12 +10,12 @@ setopt appendhistory                                            # Immediately ap
 setopt inc_append_history                                       # save history entries as soon as they are entered
 setopt share_history                                            # share history between different instances of the shell
 setopt auto_cd                                                  # cd by typing directory name if it's not a command
-setopt correct_all                                              # autocorrect commands
 setopt auto_list                                                # automatically list choices on ambiguous completion
 setopt auto_menu                                                # automatically use menu completion
 setopt always_to_end                                            # move cursor to end if word had one match
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
+zstyle ':completion:*' matcher-list 'r:|=*' 'l:|=* r:|=*'       # Match from anywhere in filename
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path
 # Speed up completions
@@ -42,8 +42,10 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
-bindkey -v
-export KEYTIMEOUT=1
+#bindkey -v
+#export KEYTIMEOUT=1
+# emacs mode
+bindkey -e
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh

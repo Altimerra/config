@@ -129,3 +129,8 @@ textcleanerall(){
     textcleaner -f "$intensity" "$file" "clean-$file"
   done
 }
+
+function def() {
+	sdcv -n --utf8-output --color "$@" 2>&1 | \
+	bat
+}

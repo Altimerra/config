@@ -17,6 +17,7 @@ super + d
 # the church of emacs
 super + e
 	emacs
+
 # show/switch windows
 super + w
  	rofi -show window -theme
@@ -29,9 +30,11 @@ super + x
 super + a
 	rofi -modi file-browser-extended -show file-browser-extended
 
+super + r
+    rofi-pass
 
 super + n
-	~/Scripts/Custom/rofi-wifi-menu.sh
+	~/Scripts/rofi-wifi-menu.sh
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

@@ -32,11 +32,15 @@ alias e="emacsclient -nc"
 
 # file menu
 alias ff="ls | rofi -dmenu -i -multi-select | xargs -d '\n'"
-alias f="ls | fzf -m | xargs -d '\n'"
+alias f="ls | fzf -m | xargs -d '\n' handlr open"
+alias fo="ls | fzf -m | xargs -d '\n'"
+alias fr="fzf -m | xargs -d '\n' handlr open"
 
 # image pipe
 alias i="nsxiv -tfo . | xargs -d '\n'"
+alias ir="nsxiv -trfo . | xargs -d '\n'"
 alias iw="nsxiv -tfo . | xargs -d '\n' feh --bg-fill"
+alias iwr="nsxiv -trfo . | xargs -d '\n' feh --bg-fill"
 
 # mpv
 alias mpv-webcam="mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_format=mjpeg av://v4l2:/dev/video0 --profile=low-latency --untimed"

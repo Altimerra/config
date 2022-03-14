@@ -50,5 +50,5 @@
 ;(unpin! t)
 
 (package! auctex)
-(package! cdlatex)
 (package! org-vcard)
+(package! cdlatex)
