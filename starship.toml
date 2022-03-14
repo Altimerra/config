@@ -1,0 +1,33 @@
+
+format = """$status$sudo$directory$git_branch$git_commit$git_state$git_metrics$git_status$fill$battery$time
+$character"""
+
+[time]
+disabled = false
+format = '🕙[\[$time\]](blue) '
+time_format = "%T"
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[➜](bold red) "
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+
+[[battery.display]]
+threshold = 15
+style = "bold red"
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
+[fill]
+disabled = false
+symbol = " "
+style = "bold green"
