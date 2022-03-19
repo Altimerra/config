@@ -32,9 +32,10 @@ alias e="emacsclient -nc"
 
 # file menu
 alias ff="ls | rofi -dmenu -i -multi-select | xargs -d '\n'"
-alias f="ls | fzf -m | xargs -d '\n' handlr open"
-alias fo="ls | fzf -m | xargs -d '\n'"
-alias fr="fzf -m | xargs -d '\n' handlr open"
+alias fo="ls | fzf -m | xargs -d '\n' handlr open"
+alias f="ls | fzf -m | xargs -d '\n'"
+alias fro="fzf -m | xargs -d '\n' handlr open"
+alias fr="fzf -m | xargs -d '\n'"
 
 # image pipe
 alias i="nsxiv -tfo . | xargs -d '\n'"
@@ -47,6 +48,7 @@ alias mpv-webcam="mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=in
 
 # ffmpeg
 alias ff-rec="ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac"
+alias ffss="ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -vframes 1 'screen_$( date +"%d-%m-%y_%H-%M-%S" ).png'"
 
 # clipboard
 alias clip="xsel -b"

@@ -73,5 +73,5 @@ source ~/Config/zsh/functions.zsh
 source ~/Config/zsh/alias.zsh
 source ~/Config/zsh/env.zsh
 
-
+# eval "$(fasd --init auto)"
 eval "$(starship init zsh)"
