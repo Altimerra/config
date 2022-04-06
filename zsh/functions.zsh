@@ -137,6 +137,6 @@ function def() {
 
 function walle() {
 	local wallpaper="$( nsxiv -trfo . )"
-	convert "$wallpaper" -brightness-contrast -18 -sigmoidal-contrast -25 -modulate 100,150,100 ~/.cache/mywall.png
+	convert "$wallpaper" -brightness-contrast -20  -modulate 100,120,100 ~/.cache/mywall.png
 	feh --bg-fill ~/.cache/mywall.png
 }
