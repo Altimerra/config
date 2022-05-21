@@ -21,30 +21,30 @@ window:
     y: 1
 
 colors:
-  name: Pretty and Pastel
-  author: IWAFU
+  # Default colors
   primary:
-    background: "#151515"
-    foreground: "#888888"
-  cursor:
-    text: "#151515"
-    cursor: "#888888"
+    background: '#000000'
+    foreground: '#eaeaea'
+
+  # Normal colors
   normal:
-    black: "#292929"
-    red: "#CF6A4C"
-    green: "#19CB00"
-    yellow: "#FAD07A"
-    blue: "#8197BF"
-    magenta: "#8787AF"
-    cyan: "#668799"
-    white: "#888888"
+    black: '#000000'
+    red: '#d54e53'
+    green: '#b9ca4a'
+    yellow: '#e6c547'
+    blue: '#7aa6da'
+    magenta: '#c397d8'
+    cyan: '#70c0ba'
+    white: '#424242'
+
+  # Bright colors
   bright:
-    black: "#525252"
-    red: "#FF9D80"
-    green: "#23FD00"
-    yellow: "#FFEFBF"
-    blue: "#ACCAFF"
-    magenta: "#C4C4FF"
-    cyan: "#80BFAF"
-    white: "#E8E8D3"
-theme: Pretty-and-pastel
+    black: '#666666'
+    red: '#ff3334'
+    green: '#9ec400'
+    yellow: '#e7c547'
+    blue: '#7aa6da'
+    magenta: '#b77ee0'
+    cyan: '#54ced6'
+    white: '#2a2a2a'
+theme: Tomorrow-Night-Bright

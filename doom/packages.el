@@ -52,3 +52,4 @@
 (package! auctex)
 (package! org-vcard)
 (package! cdlatex)
+(package! julia-mode)

@@ -164,10 +164,10 @@ XF86MonBrightnessDown
 
 # Volume control
 XF86AudioLowerVolume
-    pulseaudio-ctl down
+    pamixer -d 5
 
 XF86AudioRaiseVolume
-    pulseaudio-ctl up
+    pamixer -i 5
 
 XF86AudioMute
-    pulseaudio-ctl mute
+    pamixer -t

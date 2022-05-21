@@ -8,7 +8,7 @@ picom --vsync --backend glx &
 dunst &
 ~/.fehbg &
 # xfce4-power-manager &
-sh ~/Scripts/battery-notify &
+python3 ~/Scripts/batterynotify &
 
 setxkbmap -option caps:escape
 
