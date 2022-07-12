@@ -8,3 +8,6 @@ set recolor-lightcolor          "#232627"
 set recolor-darkcolor           "#D3D3D3"
 set recolor-keephue             true      # keep original color
 
+map = zoom in
+map + zoom best-fit
+map b feedkeys ":blist<Return>"

@@ -52,4 +52,6 @@
 (package! auctex)
 (package! org-vcard)
 (package! cdlatex)
-(package! julia-mode)
+
+(unpin! org-roam)
+(package! org-roam-ui)
